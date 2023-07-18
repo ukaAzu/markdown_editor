@@ -1,18 +1,18 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.tsx',
+    entry: './src/index.ts',
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.ts$/,
                 use: 'ts-loader',
                 exclude: /node-modules/,
             },
         ],
     },
     resolve: {
-        extensions: ['.js', '.ts', '.tsx'],
+        extensions: ['.ts'],
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
